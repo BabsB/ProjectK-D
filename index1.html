@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-App="KRRclass" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title> Simple SW Application </title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/css-custom.css" rel="stylesheet">
+</head>
+
+<body ng-controller="MainCtrl">
+
+  <!-- Navigation -->
+
+
+  <!-- Main Content -->
+  <div class="container mb-5">
+    <h1>Car Searcher</h1>
+    <p>Select the various specifications you want your car to have. The Car Searcher application will generate all the cars that have these specifications. It's important to have a specification selected at every section</p>
+
+
+
+    <form name="myForm" class="form-control">
+      <p><b>Pick the fuel type:</b></p>
+      <input type="radio" ng-model="fuel.name" value="ex:Diesel"><label> Diesel</label><br/>
+      <input type="radio" ng-model="fuel.name" value="ex:Petrol"><label> Petrol</label><br/>
+      <input type="radio" ng-model="fuel.name" value="ex:CNG"><label> CNG</label><br/>
+      <input type="radio" ng-model="fuel.name" value="ex:Electric%28Battery%29"><label> Electric Battery</label><br/>
+      
+    </form>
+
+    <form name="myForm" class="form-control">
+      <p><b>Pick the vehicle type:</b></p>
+      <input type="radio" ng-model="bodytype.name" value="ex:Coupe"><label> Coupe</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Sedans"><label> Sedan</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Convertibles"><label> Convertible</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:SUV"><label> SUV</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Hatchback"><label> Hatchback</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:MUV"><label> MUV</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Hybrids"><label> Hybrid</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Pickup%20Trucks"><label> Pickup Truck</label><br/>      
+      <input type="radio" ng-model="bodytype.name" value="ex:Wagons"><label> Wagon</label><br/>
+      <input type="radio" ng-model="bodytype.name" value="ex:Minivans"><label> Minivan</label><br/>           
+      
+    </form>
+
+    <form name="myForm" class="form-control">
+      <p><b>Pick the transmission type:</b></p>
+      <input type="radio" ng-model="transmission.name" value="ex:Automatic"><label> Automatic</label><br/>
+      <input type="radio" ng-model="transmission.name" value="ex:Manual"><label> Manual</label><br/>
+      
+    </form>
+
+    <form name="myForm" class="form-control">
+      <p><b>Pick the price range:</b></p>
+      <input type="radio" ng-model="price.name" value="5000"><label> under €5.000</label><br/>
+      <input type="radio" ng-model="price.name" value="15000"><label> under €15.000</label><br/>
+      <input type="radio" ng-model="price.name" value="30000"><label> under €30.000</label><br/>
+      <input type="radio" ng-model="price.name" value="70000"><label> under €70.000</label><br/>
+      <input type="radio" ng-model="price.name" value="150000"><label> under €150.000</label><br/>
+      <input type="radio" ng-model="price.name" value="2500000"><label> under €2.500.000</label><br/>
+      
+    </form>
+
+    <form name="myForm" class="form-control">
+      <p><b>Pick the amount of seats:</b></p>
+      <input type="radio" ng-model="seats.name" value="2"><label> 2</label><br>
+      <input type="radio" ng-model="seats.name" value="3"><label> 3</label><br>
+      <input type="radio" ng-model="seats.name" value="4"><label> 4</label><br>
+      <input type="radio" ng-model="seats.name" value="5"><label> 5</label><br>
+      <input type="radio" ng-model="seats.name" value="6"><label> 6</label><br>
+      <input type="radio" ng-model="seats.name" value="7"><label> 7</label><br>
+      <input type="radio" ng-model="seats.name" value="8"><label> 8</label><br>
+      <input type="radio" ng-model="seats.name" value="9"><label> 9</label><br>
+      <input type="radio" ng-model="seats.name" value="10"><label> 10</label><br>
+      
+    </form>
+
+
+
+
+
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-8">
+
+          <div class="input-group">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" ng-click="startMyAwesomeApp()" type="button">Generate Results</button>
+                       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+
+        <div class="mainForm">
+          <span id="result"></span>
+        </div>
+
+    </div>
+  </div>
+
+
+<!-- JavaScript libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/angular-chart.min.js"></script>
+<script src="main1.js"></script>
+
+</body>
+
+</html>
