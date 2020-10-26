@@ -1,0 +1,52 @@
+td {
+	padding-bottom: 5rem !important;
+}
+.table-borderd {
+	margin: 20%;
+	padding: 20%;
+	width: 10%;
+}
+
+a.snapchat {
+  position: relative;
+  background: lightgrey;
+}
+
+a.snapchat img {
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: -20px;
+  transition: opacity .5s, bottom .5s;
+}
+
+a.snapchat:hover img {
+  opacity: 1;
+  top: 20px;
+}
+
+input[type="radio"]:checked + label {
+    color: green;  
+}
+
+
+.footer-sticky {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-acl {
+	background-color: #8fab8e;
+}
+
+.a-acl {
+	color: #3c3c3c!important;
+}
+
+.my-card:hover {
+	border-color: #f58723;
+}
