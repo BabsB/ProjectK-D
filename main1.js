@@ -2,11 +2,7 @@ angular.module('KRRclass', [ 'chart.js']).controller('MainCtrl', ['$scope','$htt
 
 
 function mainCtrl($scope, $http){
-	/*document.fuel.onclick = function(){
-    	var radVal = document.fuel.fueltype.value;
-    	result.innerHTML = 'You selected: '+radVal;
-    	console.log(radVal);
-	} */
+
 
 
 	$scope.startMyAwesomeApp = function(){
